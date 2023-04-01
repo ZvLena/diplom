@@ -274,17 +274,13 @@
           </article>
         </div>
       </section>
-      <section class="aside-sidebar-element forms-search">
-        <div class="aside-forms-search">
-          <form class="aside-search">
+      <form class="aside-search forms-search">
             <label class="aside-search-group">
               <span class="aside-search-text">Поиск</span>
               <input class="aside-field-search" type="search" placeholder="Найти..." required>
             </label>
             <button class="aside-search-button" type="submit"><span class="aside-search-button-title">Найти</span></button>
-          </form>
-        </div>
-      </section>
+      </form>
       <section class="aside-sidebar-element subscription">
         <div class="asid-titles">
           <h2 class="aside-title-subscription">рассылка</h2>
@@ -472,15 +468,15 @@
   </div>
 </footer>
 
-<div class="popup">
-  <div class="popup-container">
-    <button class="popup-close" type="button"></button>
-    <header class="feedback-header">
-      <h2 class="feedback-title">Ваш фидбек</h2>
-    </header>
+<aside class="popup">
+  <form class="popup-container">
+    <button class="popup-close" type="button">
+    	<span class="button-label">
+          Закрыть форму
+        </span>
+    </button>
+    <h2 class="feedback-title">Ваш фидбек</h2>
     <div class="feedback-content">
-      <div class="feedback-form">
-        <div class="feedback-column">
           <label class="feedback">
             <span class="feedback-question">Как часто вы заходите на сайт?</span>
             <select class="frequency-field">
@@ -490,8 +486,6 @@
               <option>Я тут впервые</option>
             </select>
           </label>
-        </div>
-      </div>
     </div>
     <div class="feedback-column-mailing">
       <span class="feedback-question">Вы подписаны на e-mail рассылку?</span>
@@ -512,11 +506,13 @@
       </label>
       <textarea class="request-field request-field-content" placeholder="Может, больше рецептов?" required=""></textarea>
       <div class="feedback-column">
-        <button class="button-send" type="submit"><span class="sign-up-button-label">Отправить</span></button>
+        <button class="button-send" type="submit">
+        	<span class="sign-up-button-label">Отправить</span>
+        </button>
       </div>
     </div>
-  </div>
-</div>
+  </form>
+</aside>
 	
 </body>
 </html>
